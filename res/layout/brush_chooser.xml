@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/v_small_brush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:contentDescription="@string/sml"
+        android:src="@drawable/very_small"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/small_brush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:contentDescription="@string/sml"
+        android:src="@drawable/small"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/medium_brush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:contentDescription="@string/med"
+        android:src="@drawable/medium"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/large_brush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:contentDescription="@string/lrg"
+        android:src="@drawable/large"
+        android:visibility="gone" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/seekbar_progressbar" />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Current value : 0"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
